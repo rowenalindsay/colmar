@@ -5,7 +5,7 @@
 
 body {
   font-family: Helvetica;
-  color: gray;
+  color: rgb(57, 60, 66);
   font-size: 16px;
   font-weight: normal;
   line-height: 1.4rem;
@@ -31,13 +31,9 @@ span {
   font-size: 1rem;
 }
 
-.normal p {
-  font-weight: normal;
-}
-
 a {
   color: dodgerblue;
-  font-weight: normal;
+
 }
 
 .flex-container {
@@ -56,22 +52,21 @@ header {
   background-color: white;
   height: 64px;
   width: 100%;
-  z-index: 5;
   align-items: center;
-}
-
-.logo1 {
-  color: rgb(57, 60, 66);
-  font-weight: bold;
-}
-
-.logo1, .logo2 {
-  font-size: 1.5rem;
 }
 
 header img {
   padding-left: 24px;
   height: 60%;
+}
+
+.logo1 {
+  font-weight: bold;
+}
+
+.logo1,
+.logo2 {
+  font-size: 1.5rem;
 }
 
 nav {
@@ -83,6 +78,10 @@ nav {
 nav span {
   display: inline-block;
   padding-left: 16px;
+}
+
+.mobile {
+  display: none;
 }
 
 @media only screen and (max-width: 680px) {
@@ -100,21 +99,25 @@ nav span {
   background-color: silver;
   width: 100%;
   padding: 32px 24px;
+  display: flex;
 }
 
 .banner img {
   width: 60%;
-  display: inline-block;
+  height: auto;
 }
 
-.banner-info {
-  display: inline-block;
+.banner-content{
   margin-left: 24px;
-  width: 100%;
+  width: 30%;
+  flex-shrink: 1;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.banner .sidebar-section {
-
+.banner-content h2 {
+  font-weight: normal;
+  padding: 32px 0 24px 0;
 }
 
 .button {
@@ -122,22 +125,31 @@ nav span {
   background-color: gray;
   padding: 8px 30px;
   text-align: center;
-  width: 50%;
+  width: 100%;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
   .banner {
     padding: 0;
+    display: block;
   }
 
   .banner img {
     width: 100%;
-    display: block;
+    height: auto;
   }
 
-  .banner-info {
-    display: block;
+  .banner-content{
+    padding: 32px 16px;
     width: 100%;
+  }
+
+  .button {
+    color: white;
+    background-color: gray;
+    padding: 8px 36px;
+    text-align: center;
+    width: 50%;
   }
 }
 
@@ -152,36 +164,37 @@ nav span {
   width: 100%;
   background-color: white;
   padding: 32px 0;
+  display: flex;
 }
 
 .large-section {
   width: 60%;
-  display: inline-block;
-  padding: 0 24px;
+  padding: 0 0 0 24px;
 }
 
 .large-section img {
   width: 100%;
 }
 
-.large-section-info {
-  width: 100%;
-}
-
-.large-section-info h1 {
+.large-section h1 {
   padding: 32px 0 24px 0;
 }
 
+.large-section p {
+  padding-right: 24px;
+}
+
 .sidebar-section {
-  display: inline-block;
   width: 39%;
   border-left: 1px solid silver;
-  height: 100%
+  height: 100%;
+  margin-left: 24px;
 }
 
 .sidebar {
   padding: 16px;
   display: flex;
+  border: 1px solid silver;
 
 }
 
@@ -258,7 +271,7 @@ nav span {
 .start-learning {
   background-color: silver;
   width: 100%;
-  padding: 32px 72px;
+  padding: 32px 60px;
 }
 
 .start-learning h1 {
@@ -295,7 +308,7 @@ nav span {
   padding-bottom: 8px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 550px) {
   .start-learning {
     background-color: white;
     width: 100%;
@@ -339,6 +352,8 @@ nav span {
   background-color: white;
   width: 100%;
   padding: 32px 0 32px 24px;
+  display: flex;
+
 }
 
 .thesis-exhibit h1 {
@@ -348,7 +363,6 @@ nav span {
 
 .large-section2 {
   width: 60%;
-  display: inline-block;
   padding: 0 24px;
 }
 
@@ -359,6 +373,11 @@ nav span {
 #justify {
   text-align: left;
   padding: 24px 0 8px 0;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 32px;
 }
 
 @media only screen and (max-width: 550px) {
