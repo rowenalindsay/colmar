@@ -1,3 +1,4 @@
+/* Main Stylings */
 * {
   box-sizing: border-box;
 }
@@ -6,12 +7,15 @@ body {
   font-family: Helvetica;
   color: gray;
   font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4rem;
 }
 
 h1 {
   color: rgb(57, 60, 66);
   font-weight: bold;
   font-size: 2.5rem;
+  line-height: normal;
 }
 
 h2 {
@@ -20,11 +24,31 @@ h2 {
   font-size: 1.2rem;
 }
 
-p {
-  color: silver;
-  font-wegith: normaml;
+p,
+span {
+  color: rgb(57, 60, 66);
+  font-weight: lighter;
   font-size: 1rem;
 }
+
+.normal p {
+  font-weight: normal;
+}
+
+a {
+  color: dodgerblue;
+  font-weight: normal;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+
 
 /* Header */
 
@@ -34,12 +58,6 @@ header {
   width: 100%;
   z-index: 5;
   align-items: center;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .logo1 {
@@ -67,10 +85,14 @@ nav span {
   padding-left: 16px;
 }
 
-@media only screen and (max-width: 480px) {
-
-
+@media only screen and (max-width: 680px) {
+  nav span {
+    display: none;
+  }
 }
+
+
+
 
 /* Banner */
 
@@ -88,17 +110,40 @@ nav span {
 .banner-info {
   display: inline-block;
   margin-left: 24px;
+  width: 100%;
+}
+
+.banner .sidebar-section {
+
 }
 
 .button {
   color: white;
   background-color: gray;
   padding: 8px 30px;
+  text-align: center;
+  width: 50%;
 }
 
 @media only screen and (max-width: 480px) {
+  .banner {
+    padding: 0;
+  }
 
+  .banner img {
+    width: 100%;
+    display: block;
+  }
+
+  .banner-info {
+    display: block;
+    width: 100%;
+  }
 }
+
+
+
+
 
 
 /* Keep Practicing */
@@ -163,10 +208,49 @@ nav span {
 .gray {
   background-color: silver;
 }
-@media only screen and (max-width: 480px) {
+
+.mobile-sidebar-section {
+  display: none;
+}
+
+.mobile-sidebar {
+  padding: 16px;
+  display: inline-block;
+}
+
+.mobile-sidebar img {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+  .keep-practicing {
+    padding: 16px 0;
+  }
+
+  .large-section {
+    display: none;
+  }
+
+  .sidebar-section {
+    display: none;
+  }
+
+  .mobile-sidebar-section {
+    display: block;
+    width: 100%;
+  }
+
+  .content h2 {
+    padding-top: 16px;
+  }
+
 
 
 }
+
+
+
 
 
 /* Start Learning */
@@ -177,18 +261,15 @@ nav span {
   padding: 32px 72px;
 }
 
-.start-learning .logo {
+.start-learning h1 {
   text-align: center;
   padding-bottom: 32px;
-}
-
-.courses {
-
 }
 
 .course {
   padding: 32px;
 }
+
 .course img{
   height: 200px;
   width: 300px;
@@ -206,13 +287,51 @@ nav span {
   padding: 16px 16px 24px 16px;
 }
 
-.course-info h1 {
-  padding-bottom: 8px;
-}
-
 .course-info h2 {
   padding-bottom: 8px;
 }
+
+.course-info p{
+  padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+  .start-learning {
+    background-color: white;
+    width: 100%;
+    padding: 32px 0;
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+  }
+
+  .course {
+    padding: 0;
+    margin: 0;
+  }
+
+  .course-info h2 {
+    background-color: silver;
+    padding: 16px 16px 16px 16px;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course-info {
+    padding: 8px;
+  }
+
+  .course-info p {
+    display: none;
+  }
+
+}
+
+
+
+
+
 
 /* Thesis Exhibit */
 
@@ -222,17 +341,60 @@ nav span {
   padding: 32px 0 32px 24px;
 }
 
-.thesis-exhibit .logo {
+.thesis-exhibit h1 {
   text-align: center;
   padding-bottom: 32px;
+}
+
+.large-section2 {
+  width: 60%;
+  display: inline-block;
+  padding: 0 24px;
 }
 
 .thesis-exhibit video {
   width: 100%;
 }
 
+#justify {
+  text-align: left;
+  padding: 24px 0 8px 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .thesis-exhibit {
+    padding: 32px 0;
+  }
+
+  .thesis-exhibit .large-section2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .thesis-exhibit .sidebar-section {
+    display: none;
+  }
+
+  .large-section-info {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
 /* Footer */
 footer {
   padding: 16px 24px;
   border-top: 1px silver solid;
+}
+
+@media only screen and (max-width: 550px) {
+  footer span {
+    display: none;
+  }
+
 }
