@@ -44,8 +44,6 @@ a {
 
 
 
-
-
 /* Header */
 
 header {
@@ -80,17 +78,11 @@ nav span {
   padding-left: 16px;
 }
 
-.mobile {
-  display: none;
-}
-
 @media only screen and (max-width: 680px) {
   nav span {
     display: none;
   }
 }
-
-
 
 
 /* Banner */
@@ -145,16 +137,9 @@ nav span {
   }
 
   .button {
-    color: white;
-    background-color: gray;
-    padding: 8px 36px;
-    text-align: center;
     width: 50%;
   }
 }
-
-
-
 
 
 
@@ -195,7 +180,6 @@ nav span {
   padding: 16px;
   display: flex;
   border: 1px solid silver;
-
 }
 
 .sidebar img {
@@ -208,6 +192,7 @@ nav span {
   flex-direction: column;
   padding-left: 16px;
   justify-content: center;
+  width: 65%;
 }
 
 .content h2 {
@@ -261,9 +246,6 @@ nav span {
 
 
 }
-
-
-
 
 
 /* Start Learning */
@@ -342,10 +324,6 @@ nav span {
 }
 
 
-
-
-
-
 /* Thesis Exhibit */
 
 .thesis-exhibit {
@@ -399,10 +377,6 @@ nav span {
   }
 
 }
-
-
-
-
 
 
 /* Footer */

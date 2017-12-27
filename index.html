@@ -5,39 +5,46 @@
     <title>Colmar</title>
     <link href="Resources/CSS/reset.css" rel="stylesheet" type="text/css" />
     <link href="Resources/CSS/style.css" rel="stylesheet" type="text/css" />
-     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
   </head>
   <body>
 
 <!-- Header -->
-  <header class="flex-container">
+    <header class="flex-container">
 
-    <!-- Logo -->
-    <img src="Resources/capstone_colmar_assets/images/ic-logo.svg" />
-    <span class="logo1">COLMAR</span><span class="logo2">ACADEMY</span>
+      <!-- Logo -->
+      <img src="Resources/capstone_colmar_assets/images/ic-logo.svg" alt="company logo"/>
+      <span class="logo1">COLMAR</span><span class="logo2">ACADEMY</span>
 
-    <!-- Navigation -->
-    <nav>
-      <span>On campus</span>
-      <span>Online</span>
-      <span>For companies</span>
-      <span>Sign in</span>
-    </nav>
+      <!-- Navigation -->
+      <nav role="presentation">
+        <span>On campus</span>
+        <span>Online</span>
+        <span>For companies</span>
+        <span>Sign in</span>
+      </nav>
 
-    <!-- Mobile -->
-    <!--<nav class="mobile">
-      <img src="Resources/capstone_colmar_assets/images/ic-logo.svg" />
-      <i class=" fa-desktop">
-      <i class="fa-user">
-    </nav>-->
+    </header>
 
-  </header>
+      <!-- Mobile Header
+    <header class="flex-container mobile">
+      <nav role="presentation">
+        <span><img src="Resources/capstone_colmar_assets/images/ic-logo.svg" /><span>
+        <span><i class=" fa-desktop"><span>
+        <span><i class="fa-user"><span>
+      </nav>
+    </header>
+-->
 
 <!-- Banner -->
-  <div class="banner">
+    <div class="banner">
 
-      <img src="Resources/capstone_colmar_assets/images/banner.jpg" />
+      <!--Banner Image-->
+      <img src="Resources/capstone_colmar_assets/images/banner.jpg" alt="two women studying"/>
 
+      <!--Banner Content-->
       <div class="banner-content flex-container">
         <h1>Learn something</h1>
         <h1>new everyday</h1>
@@ -49,93 +56,93 @@
         </div>
       </div>
 
-  </div>
+    </div>
 
 <!-- Keep Praciting -->
-  <div class="keep-practicing">
+    <div class="keep-practicing">
 
-    <div class="large-section">
-
-        <img src="Resources/capstone_colmar_assets/images/information-main.jpg" />
+      <!-- Left Section-->
+      <div class="large-section">
+        <img src="Resources/capstone_colmar_assets/images/information-main.jpg" alt="man reading"/>
         <h1>It doesn't hurt to keep practicing</h1>
         <p>"Curabitur vitae libero in ipsum porttior consequat. Aliquam et commondo lectus, nec consequat neque. Sed non accumsan urna. Phasellis sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         <br />
         <p>Emanuel, Sr Strategist at Hiring.com</p>
+      </div>
+
+      <!-- Right Section -->
+      <div class="sidebar-section">
+
+        <div class="sidebar flex-conteiner">
+          <img src="Resources/capstone_colmar_assets/images/information-orientation.jpg" alt="image of campus" />
+          <div class="content">
+            <h2>Orientation date</h2>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <p><a>Read more</a></p>
+          </div>
+        </div>
+
+        <div class="sidebar flex-conteiner">
+          <img src="Resources/capstone_colmar_assets/images/information-campus.jpg" alt="image of campus coffeeshop"/>
+          <div class="content">
+            <h2>Our campus</h2>
+            <p>Find which campus is close to you</p>
+            <p><a>Read more</a></p>
+          </div>
+        </div>
+
+        <div class="sidebar flex-conteiner gray">
+          <img src="Resources/capstone_colmar_assets/images/information-guest-lecture.jpg" alt="image of Oliver Stack" />
+          <div class="content">
+            <h2>Our guest lecture</h2>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <p><a>Read more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Right Section -->
+      <div class="mobile-sidebar-section">
+
+        <div class="mobile-sidebar">
+          <img src="Resources/capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="image of campus" />
+          <div class="content">
+            <h2>Orientation date</h2>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <p><a>Read more</a></p>
+          </div>
+        </div>
+
+        <div class="mobile-sidebar">
+          <img src="Resources/capstone_colmar_assets/images/information-campus-mobile.jpg" alt="image of campus coffeeshop"/>
+          <div class="content">
+            <h2>Our campus</h2>
+            <p>Find which campus is close to you</p>
+            <p><a>Read more</a></p>
+          </div>
+        </div>
+
+        <div class="mobile-sidebar">
+          <img src="Resources/capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="image of Oliver Stack"/>
+          <div class="content">
+            <h2>Our guest lecture</h2>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <p><a>Read more</a></p>
+          </div>
+        </div>
+
+      </div>
 
     </div>
-
-    <div class="sidebar-section">
-
-      <div class="sidebar flex-conteiner">
-        <img src="Resources/capstone_colmar_assets/images/information-orientation.jpg" />
-        <div class="content">
-          <h2>Orientation date</h2>
-          <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-          <p><a>Read more</a></p>
-        </div>
-      </div>
-
-      <div class="sidebar flex-conteiner">
-        <img src="Resources/capstone_colmar_assets/images/information-campus.jpg" />
-        <div class="content">
-          <h2>Our campus</h2>
-          <p>Find which campus is close to you</p>
-          <p><a>Read more</a></p>
-        </div>
-      </div>
-
-      <div class="sidebar flex-conteiner gray">
-        <img src="Resources/capstone_colmar_assets/images/information-guest-lecture.jpg" />
-        <div class="content">
-          <h2>Our guest lecture</h2>
-          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-          <p><a>Read more</a></p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="mobile-sidebar-section">
-
-      <div class="mobile-sidebar">
-        <img src="Resources/capstone_colmar_assets/images/information-orientation-mobile.jpg" />
-        <div class="content">
-          <h2>Orientation date</h2>
-          <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-          <p><a>Read more</a></p>
-        </div>
-      </div>
-
-      <div class="mobile-sidebar">
-        <img src="Resources/capstone_colmar_assets/images/information-campus-mobile.jpg" />
-        <div class="content">
-          <h2>Our campus</h2>
-          <p>Find which campus is close to you</p>
-          <p><a>Read more</a></p>
-        </div>
-      </div>
-
-      <div class="mobile-sidebar">
-        <img src="Resources/capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" />
-        <div class="content">
-          <h2>Our guest lecture</h2>
-          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-          <p><a>Read more</a></p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
 
 <!-- Start Learning -->
-  <div class="start-learning">
+    <div class="start-learning">
     <h1>Start learning</h1>
 
     <div class="courses flex-container">
 
       <div class="course">
-        <img src="Resources/capstone_colmar_assets/images/course-software.jpg" />
+        <img src="Resources/capstone_colmar_assets/images/course-software.jpg" alt="image of two computers on desk"/>
         <div class="course-info">
           <h2>Software engineering</h2>
           <p>COURSES</p>
@@ -144,7 +151,7 @@
       </div>
 
       <div class="course">
-        <img src="Resources/capstone_colmar_assets/images/course-computer-art.jpg" />
+        <img src="Resources/capstone_colmar_assets/images/course-computer-art.jpg" alt="image of cell phone"/>
         <div class="course-info">
           <h2>Computer art</h2>
           <p>COURSES</p>
@@ -153,7 +160,7 @@
       </div>
 
       <div class="course">
-        <img src="Resources/capstone_colmar_assets/images/course-design.jpg" />
+        <img src="Resources/capstone_colmar_assets/images/course-design.jpg" alt="film camera" />
         <div class="course-info">
           <h2>Design</h2>
           <p>COURSES</p>
@@ -162,7 +169,7 @@
       </div>
 
       <div class="course">
-        <img src="Resources/capstone_colmar_assets/images/course-data.jpg" />
+        <img src="Resources/capstone_colmar_assets/images/course-data.jpg" alt="computer displaying graphs"/>
         <div class="course-info">
           <h2>Data</h2>
           <p>COURSES</p>
@@ -171,7 +178,7 @@
       </div>
 
       <div class="course">
-        <img src="Resources/capstone_colmar_assets/images/course-business.jpg" />
+        <img src="Resources/capstone_colmar_assets/images/course-business.jpg" alt="game of chess" />
         <div class="course-info">
           <h2>Business</h2>
           <p>COURSES</p>
@@ -180,7 +187,7 @@
       </div>
 
       <div class="course">
-        <img src="Resources/capstone_colmar_assets/images/course-marketing.jpg" />
+        <img src="Resources/capstone_colmar_assets/images/course-marketing.jpg" alt="smart watch"/>
         <div class="course-info">
           <h2>Marketing</h2>
           <p>COURSES</p>
@@ -193,46 +200,50 @@
   </div>
 
 <!-- Thesis Exhibit -->
-  <h1 class="logo">Thesis exhibit</h1></div>
+    <h1 class="logo">Thesis exhibit</h1></div>
 
-  <div class="thesis-exhibit">
+    <div class="thesis-exhibit">
 
-    <div class="large-section2">
-      <video src="Resources/capstone_colmar_assets/videos/thesis.mp4" controls></video>
-      <div class="large-section-info">
-        <h2 id="justify">Reimagine urban</h2>
-        <p>"Curabitur vitae libero in ipsum porttitor conseququat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etim eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-      </div>
-    </div>
-
-    <div class="sidebar-section">
-
-      <div class="sidebar flex-conteiner gray">
-        <img src="Resources/capstone_colmar_assets/images/thesis-fisma.jpg" />
-        <div class="content">
-          <h2>Fisma: Design and Prototype</h2>
-          <p>Designer showcase of new prototype product</p>
+      <!--Left Section-->
+      <div class="large-section2">
+        <video src="Resources/capstone_colmar_assets/videos/thesis.mp4" controls></video>
+        <div class="large-section-info">
+          <h2 id="justify">Reimagine urban</h2>
+          <p>"Curabitur vitae libero in ipsum porttitor conseququat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etim eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         </div>
       </div>
 
-      <div class="sidebar flex-conteiner">
-        <img src="Resources/capstone_colmar_assets/images/thesis-now-and-then.jpg" />
-        <div class="content">
-          <h2>Now and then</h2>
-          <p>Research study about New York</p>
+      <!--Right Section-->
+      <div class="sidebar-section">
+
+        <div class="sidebar flex-conteiner gray">
+          <img src="Resources/capstone_colmar_assets/images/thesis-fisma.jpg" alt="person doing homework"/>
+          <div class="content">
+            <h2>Fisma: Design and Prototype</h2>
+            <p>Designer showcase of new prototype product</p>
+          </div>
         </div>
+
+        <div class="sidebar flex-conteiner">
+          <img src="Resources/capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="New York skyline"/>
+          <div class="content">
+            <h2>Now and then</h2>
+            <p>Research study about New York</p>
+          </div>
+        </div>
+
       </div>
+
     </div>
-  </div>
 
 <!-- Footer -->
-  <footer class="flex-container">
-    <p>© 2016 Colmar Academy. All rights reserved</p>
-    <nav>
-      <span>Terms</span>
-      <span>Privacy</span>
-    </nav>
-  </footer>
+    <footer class="flex-container">
+      <p>© 2016 Colmar Academy. All rights reserved</p>
+      <nav role="presentation">
+        <span>Terms</span>
+        <span>Privacy</span>
+      </nav>
+    </footer>
 
   </body>
 </html>
